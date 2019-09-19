@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>Top 10</title>
+<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+
+    <style type="text/css" >
+#tbl {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tbl td, #tbl th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tbl tr:nth-child(even){background-color: 	#98FB98;}
+
+#tbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: 	#20B2AA;
+    color: white;
+}
+
+        
+.dropbtn {
+    background-color: #DDA0DD;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: 	#CD853F;}
+        
+</style>
+</head>
+<body>
+
+    <div class="dropdown">
+    <button class="dropbtn"><a href="/welcome">Admin Home</a></button>
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn"><a href="/adm_contactus">Contact Us</a></button>
+    </div>
+<div class="dropdown">
+    <button class="dropbtn">Management</button>
+    <div class="dropdown-content">
+    <a href="/adm_top10mba">Top 10</a>
+    <a href="/adm_iim">IIM</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">Engineering</button>
+    <div class="dropdown-content">
+    <a href="/adm_top10engg">Top 10</a>
+    <a href="/adm_iit">IIT</a>
+    <a href="/adm_nit">NIT</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">Medical</button>
+    <div class="dropdown-content">
+    <a href="/adm_top10medgovt">Top 10 Govt</a>
+    <a href="/adm_top10medpvt">Top 10 Pvt</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">Law</button>
+    <div class="dropdown-content">
+    <a href="/adm_top10law">Top 10</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn"><a href="/adm_signup">Signup</a></button>
+</div>
+        
+    <br/><br/><br/><br/>
+    <h1 align="center">Top 10 Engineering Colleges</h1>
+    <br/><br/>
+      <div align="right">
+    <a href="/insert1" >
+        <button type="button" class="btn btn-lg btn-primary btn-flat"  value="Insert New">Insert New  <span class="glyphicon glyphicon-plus"></span></button>    
+    </a>
+    </div>
+        <br/><br/>
+     <table id="tbl" border=1>
+                <thead align="center">
+                  <tr>
+				    <th>IMAGE</th>
+                    <th>NAME</th>
+                    <th>STATE</th>
+                    <th>RANK</th>
+                    <th>LINK</th>
+                    <th>TYPE</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+				  </tr>
+                </thead>
+                
+                <tbody>
+                  {% if data|length == 0 %}
+                  <tr>
+                    <td>No Data</td>
+                    <td></td>
+					<td></td>
+                    <td></td>
+					<td></td>
+                    <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  {% else %}
+                  <tr>
+                      {% for row in data %}
+                      <td>{{ row[0] }}</td>
+                      <td>{{ row[1] }}</td>
+                      <td>{{ row[2] }}</td>
+                      <td>{{ row[3] }}</td>
+                      <td>{{ row[4] }}</td>
+                      <td>{{ row[5] }}</td>
+                      <td  align="center">
+                     <a href="/update/{{ row[6] }}">
+                        <button type="button" class="btn btn-sm btn-warning btn-flat" title="Update"><span class="glyphicon glyphicon-pencil"></span></button>
+                      </a>
+                    </td>
+                      <td  align="center">
+                       <a href="/delete1/{{ row[6] }}">
+                        <button type="button" class="btn btn-sm btn-danger btn-flat" title="Delete"><span class="glyphicon glyphicon-remove"></span></button>
+                      </a>
+                      </td>
+                  </tr>
+                      {% endfor %}
+                    {% endif%}   
+                </tbody>
+    </table>
+    
+        
+        
+        <!-- jQuery -->
+       <script src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"> /')</script>
+
+    <!-- Bootsrap javascript file -->
+    <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js')}}"></script>
+    
+    <!-- owl carouseljavascript file -->
+    <script src= "{{ url_for('static',filename='assets/js/owl.carousel.min.js')}}"></script>
+
+    <!-- Template main javascript -->
+    <script src= "{{ url_for('static',filename='assets/js/main.js' )}}"></script>
+
+   
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        
+    </body>
+    </html>

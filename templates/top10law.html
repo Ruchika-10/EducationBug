@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Top 10 Law</title>
+<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css" >
+#tbl {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tbl td, #tbl th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tbl tr:nth-child(even){background-color: #dddddd;}
+
+#tbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: 	#00008B;
+    color: white;
+}  
+    a{
+        color:black;
+    }
+    a:hover{
+        color:red
+    }
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+</div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li><a href="http://localhost:8181/">Home</a></li>
+<li><a href="http://localhost:8181/about1">About</a></li>
+<li><a href="http://localhost:8181/contact1">Contact</a></li>
+<li><a href="http://localhost:8181/law">Law</a></li>
+<li class="active"><a href="http://localhost:8181/top10law">Top 10 Law</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<br/><br/><br/><br/>
+<h1 align="center"><u>Top 10 Law Colleges</u></h1>
+<br/><br/><br/>
+ <table id="tbl" border=1>
+                <thead align="center">
+                  <tr>
+				    <th>RANK</th>
+                    <th>IMAGE</th>
+                    <th>NAME</th>
+                    <th>LINK</th>
+				  </tr>
+                </thead>
+                
+                <tbody>
+                  {% if data|length == 0 %}
+                  <tr>
+                    <td>No Data</td>
+                    <td></td>
+					<td></td>
+                    <td></td>
+					<td></td>
+                  </tr>
+                  {% else %}
+                  <tr>
+                      {% for row in data %}
+                    <td align="center"><h3>{{ row[3] }}</h3></td>
+                    <td align="center"><img src="{{ url_for('static',filename='uploads/' + row[0]) }}" width=120 height=120 /></td>
+                      <td><a target="_blank" href="/{{ row[4] }}"><h3>{{ row[1] }}</h3></a>
+					    <h4 class="glyphicon glyphicon-map-marker"> {{ row[2] }}</h4></td>
+                    <td align="center">
+                      <a target="_blank" href="/{{ row[4] }}">
+                        <input type="button"  title="Open" value="View" />
+                      </a>
+                    </td>
+                  </tr>
+                      {% endfor %}
+                    {% endif%}   
+                </tbody>
+    </table>
+</body>
+</html>

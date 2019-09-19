@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+#1:hover{
+color:DC143C;
+    }
+.boxed{
+border:1px solid black;
+width:1500px;
+height:300px;
+background-color:	#F08080;
+border-radius:50px;
+}
+img{ width:400px;
+height:250px;
+margin-top:25px;
+margin-right:50px;
+border:1px solid black;
+}
+h1{
+margin-left:100px;
+margin-top:70px;
+}
+.a1{
+margin-left:100px;
+}
+h2{
+margin-left:100px;
+color:DC143C;
+}
+.a{ 
+margin-left:100px;
+}
+.column {
+   
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/kgmul.jfif')}}"  alt="med" style="float:right;" class="center" />
+<h1><u>KING GEORGE MEDICAL COLLEGE,LUCKNOW</u></h1>
+<h3 class="a1">Government</h3>
+</div>
+<h2><p>King George's Medical University is situated in the heart of the historic city of Lucknow which is the capital of India 's most populous state Uttar Pradesh. Lucknow lies about 500 km east of Delhi . The city was the seat of the Nawabs of Awadh in the 19 th century and a centre for the arts - music, painting, dance, 'shatranj' or chess, kite flying and 'tehzeeb' or culture. The university campus adjoins the crowded 'Chowk' area and is off Shahmina Road , very close to the bank of River Gomti</p></h2>    
+
+<h2>About:</h2>
+    <p class='a'>The original Administrative Block now houses the Convocation Hall, Seminar Hall (White Hall), Examination Hall, Vice Chancellor's Office and KGMCICE or Clinical Epidemiology Unit besides other related offices. Beside the main building a new Administrative Building has come up recently and houses the Registrar's Office, Finance Office, Examination Cell, Undergraduate and Postgraduate Cells, computer centre etc.
+
+Just down the road from the Administrative Block, the old State Health Institute Building has been taken over as the Pariksha Bhawan. On the right side of the main Administrative Block lies the Central Library and adjoining Ranvaxy Centre The original hospital attached to the college was known as King George Hospital and was commissioned in 1914. This building presently houses the Public Relations Office, the Superintendent's Office, Head Cashier's Office, Matron's Office, stores, Emergency Pathology Labs and the Departments of Otorhinolarygology, Orthopedic Surgery, Radiodiagnosis and Radiotherapy, besides general and private wards of surgical specialities. The Gandhi Ward is a 3 storied building housing the medical wards. Next to the Ophthalmic Block, a New Ophthalmic Block has come up.
+
+</p>
+    <h2>courses offered:</h2>
+    <p class="a">
+    <li class='a'>B.SC NURSING 
+        full time Duration-4 years</li>
+    <li class='a'>DIPLOMA IN CLINICAL PATHOLOGY
+        Full time 
+        Duration -2 years</li>
+    <li class='a'>MBBS 
+        Full time 
+        Duration-66 months</li></p>
+    <h2>Exams Offered:</h2>
+    <p class="a">King George’s Medical University (KGMU) offers Degree courses at various undergraduate (UG), postgraduate (PG), and Doctoral level, in the field of Medicine & Health sciences and Nursing. The university conducts courses in varied departments for all the offered levels.
+Minimum Eligibility Criteria for all courses 
+The aspirants seeking admission in the UG Programmes need to complete their 10+2 with a minimum of 50% marks in the relevant subject, from a recognized board.
+The aspirants seeking admission in the PG Programmes need to complete their graduation with a minimum of 50% marks in the relevant subject, from a recognized university/college.</p>
+    
+    <h2>Gallery:</h2>
+	<div class="a1">
+    <div class="row">
+  <div class="column">
+   <img src=  "{{ url_for('static',filename='img/kgmul1.jfif')}}"  alt="med" style="width:300px height=200px" /></div>
+  <div class="column">
+   <img src=  "{{ url_for('static',filename='img/kgmul2.jfif')}}"  alt="med" style="width:300px height:200px">
+  </div>
+  <div class="column">
+    <img src=  "{{ url_for('static',filename='img/kgmul3.jfif')}}"  alt="med" style="width:300px height:200px">
+  </div>
+</div>
+</div>
+    
+    <h2>Contact:</h2>
+    <ul class="a">
+        <li>e-mail: abc@gmail.com</li>
+        <li>Contact Number: 342643729</li>
+        <li>if necessary give other informations and if you find more contact information like if there are given 2-3 email or mobile on one website for a college then give those  too but by making different ul -unordered list </li>
+    </ul>
+    
+</body>
+</html>

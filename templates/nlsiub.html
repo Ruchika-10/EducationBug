@@ -1,0 +1,94 @@
+<html>
+<head>
+<style>
+#1:hover{
+color:DC143C;
+    }
+.boxed{
+border:1px solid black;
+width:1500px;
+height:300px;
+background-color:	#F08080;
+border-radius:50px;
+}
+img{ width:400px;
+height:250px;
+margin-top:25px;
+margin-right:50px;
+border:1px solid black;
+}
+h1{
+margin-left:100px;
+margin-top:70px;
+}
+.a1{
+margin-left:100px;
+}
+h2{
+margin-left:100px;
+color:DC143C;
+}
+.a{ 
+margin-left:100px;
+}
+.column {
+   
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/nlsiub.jfif')}}" alt="law" style="float:right;"  class="center" />
+<h1><u>NATIONAL LAW SCHOOL OF INDIA UNIVERSITY,BANGOLORE</u></h1>
+<h3 class="a1">Government</h3>
+    </div><h2>Entrance exams</h2>
+    <li class='a'>BA + LLBCLAT</li>
+    <li class='a'>MLCLAT</li>
+    <h2>ADMISSION:</h2>
+    <P CLASS ='a'>
+Admissions to both undergraduate and postgraduate programmes are based on Common Law Admission Test (CLAT). In 2015, for the Undergraduate CLAT, a total of 40,000 students contested for a mere 55 seats, making the examination one of the most competitive in India.<br>
+For the MPP programme, candidates are selected through the Policy Aptitude Test followed by personal interviews held at the NLSIU campus itself.</P>
+    
+    <h2>Courses Offered:</h2>
+    <p class ='a'>BA LLB Hons<br>
+Business Laws<br>
+Human Rights Laws<br>
+MBL<br>
+PGD - Intellectual Property Rights<br>
+        Master of Public Policy</p>
+    
+    
+  
+    <h2>Gallery:</h2>
+	<div class="a1">
+    <div class="row">
+  <div class="column">
+    <img src="{{ url_for('static',filename='img/nlsiub1.jfif')}}" alt="law" style="width:300px height=200px" /></div>
+  <div class="column">
+    <img src="{{ url_for('static',filename='img/nlsiub2.jfif')}}" alt="law" style="width:300px height:200px">
+  </div>
+  <div class="column">
+    <img src="{{ url_for('static',filename='img/nlsiub3.jfif')}}" alt="law" style="width:300px height:200px">
+  </div>
+</div>
+    </div>
+	
+    <h2>Contact Us</h2>
+<p class='a'> National Law School of India University Nagarbhavi Bangalore – 560 072 Karnataka<br>
+    India Tel: 91-80-2321 3160, 23160532-535</p>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>	
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <title>Update</title>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/AdminLTE.min.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/_all-skins.min.css')}}">
+  
+
+</head>
+    <body>
+      
+        
+    <br/><br/><br/><br/>
+        
+        <h1 align="center">Update</h1>
+            <form class="form-horizontal" method="POST" action="/update_colleges">
+            {% for row in data %}
+              <div class="box-body">
+	      
+	     
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">IMAGE</label>
+
+                  <div class="col-sm-10">
+                    <input name="image" value="{{ row[0] }}" type="text" class="form-control" placeholder="Image" autocomplete="off" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">NAME</label>
+
+                  <div class="col-sm-10">
+                    <input name="name" value="{{ row[1] }}" type="text" class="form-control" placeholder="Name" autocomplete="off" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">STATE</label>
+
+                  <div class="col-sm-10">
+                    <input name="state" value="{{ row[2] }}" type="text" class="form-control" placeholder="State" autocomplete="off" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">RANK</label>
+
+                  <div class="col-sm-10">
+                    <input name="rank" value="{{ row[3] }}" type="text" class="form-control" placeholder="Rank" autocomplete="off" required>
+                  </div>
+                </div>
+        
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">LINK</label>
+
+                  <div class="col-sm-10">
+                    <input name="link" value="{{ row[4] }}" type="text" class="form-control" placeholder="Link" autocomplete="off" required>
+                  </div>
+                </div>
+                  
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">TYPE</label>
+
+                  <div class="col-sm-10">
+                    <input name="type" value="{{ row[5] }}" type="text" class="form-control" placeholder="Type" autocomplete="off" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-footer">
+                <a href="/welcome"><button type="button" class="btn btn-default">Cancel</button></a>
+                <input name="update" type="submit" class="btn btn-info pull-right" value="Update">
+              </div>
+             {% endfor %}
+        </form>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 0.1
+        </div>
+      </div>
+    </footer>
+
+  
+  <script src="{{ url_for('static', filename='js/jquery-2.2.3.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/app.min.js')}}"></script>
+
+</body>
+</html>

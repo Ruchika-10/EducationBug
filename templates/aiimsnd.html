@@ -1,0 +1,120 @@
+<html>
+<head>
+<style>
+#1:hover{
+color:DC143C;
+    }
+.boxed{
+border:1px solid black;
+width:1500px;
+height:300px;
+background-color:	#F08080;
+border-radius:50px;
+}
+img{ width:400px;
+height:250px;
+margin-top:25px;
+margin-right:50px;
+border:1px solid black;
+}
+h1{
+margin-left:100px;
+margin-top:70px;
+}
+.a1{
+margin-left:100px;
+}
+h2{
+margin-left:100px;
+color:DC143C;
+}
+.a{ 
+margin-left:100px;
+}
+.column {
+   
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="boxed">
+<img src="{{ url_for('static',filename='img/aiimsnd.jfif')}}" alt="med" style="float:right;"  class="center" />
+<h1><u>AIIMS,NEW DELHI</u></h1>
+<h3 class="a1">Government</h3>
+</div>
+
+<h2>About:</h2>
+    <div class="a1"><p>The Academic Section develops policy, plans and executes academic activities in pursuance of the objective of the Institute as enshrined in AIIMS Act, 1956.The objective of the Institute is to develop patterns of teaching in the Undergraduate and Postgraduate medical education in all its branches so as to demonstrate a high standard of medical education to all other medical colleges and other allied institution in India, to bring together in one place educational facilities. These activities encompass the undergraduate, postgraduate and doctoral programmes for medical, nursing and paramedical courses. These activities are conducted by the undergraduate, postgraduate and paramedical cells of Academic Section.
+</p></div>
+    <h2>courses offered:</h2>
+    <div class="a1"><p>All India Institute of Medical Sciences (AIIMS) was established by the Act of Parliament in 1956 as anautonomous institute to set patterns in Undergraduate and Postgraduate Medical Education in all itsbranches to demonstrate a high standard of medical education. This is the only institute outsidethejurisdiction of Medical Council of India to encourage experiments in thecurriculum. New AIIMS are also created on the pattern of AIIMS. New Delhi. It mainly follows a disciplinarystructure. However, since inception, AIIMS has been constantly upgrading its course content in tunewith the changing needs.
+Courses at AIIMS New Delhi at a glance
+UNDERGRADUATE
+MBBS
+BSC NURSING (Hons.)
+BSC Nursing Post Basic
+B.Sc. (Hons) in Medical Technology in Radiography
+Bachelor of Optometry
+ 
+POSTGRADUATE
+MD/MS
+MCH(6YR)
+DM(6YR)
+MD Hospital Administration
+MDS
+MSC NURSING
+MSC COURSES
+M. Biotech
+ 
+SUPERSPECIALTY
+DM
+MCH
+ 
+DOCTORAL
+FELLOWSHIP
+PHD
+ 
+RESIDENCY
+JUNIOR RESIDENT
+SENIOR RESIDENT
+SENIOR DEMONSTRATOR
+ </p>
+</div>
+    <h2>Exams Offered:</h2>
+    <p class="a">Write here about what are the exams they take for admision procedure or if there are any national level exams they follow.</p>
+    
+    <h2>Gallery:</h2>
+	<div class="a1">
+    <div class="row">
+  <div class="column">
+    <img src="{{ url_for('static',filename='img/aiimsnd1.jfif')}}" alt="med" style="width:300px height=200px" /></div>
+  <div class="column">
+    <img src="{{ url_for('static',filename='img/aiimsnd2.jfif')}}" alt="med" style="width:300px height:200px">
+  </div>
+  <div class="column">
+    <img src="{{ url_for('static',filename='img/aiimsnd3.jfif')}}" alt="med" style="width:300px height:200px">
+  </div>
+</div>
+</div>
+    
+    <h2>Contact:</h2>
+    <ul class="a">
+        <li>e-mail: http://www.aiims.edu/en.html</li>
+        <li>Contact Number: +91 2658850</li>
+    </ul>
+    
+</body>
+</html>

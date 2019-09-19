@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>12Medical</title>
+<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+        <script>
+        $(document).ready(function()
+    { $(".boxed").hover(function()
+    { $(this).css("background-color","#B3C8F3");
+    },function(){$(this).css("background-color","white")}
+                       ); 
+    });
+    </script>
+    
+</head>
+<style>
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}       
+.boxed{ margin-left:10px;
+border:1px solid blue;
+width:1480px;
+height:300px;
+border-radius:40px;
+}
+h3{
+     margin-left:50px;;
+ }
+p{
+    margin-left:50px;
+    text-align:left;
+    letter-spacing:2;
+    word-spacing:10px;
+}   
+ 
+img{ width:400px;
+height:250px;
+margin-top:25px;
+margin-right:50px;
+border:1px solid black;
+}
+    </style>    
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+</div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li><a href="http://localhost:8181/">Home</a></li>
+<li><a href="http://localhost:8181/about1">About</a></li>
+<li><a href="http://localhost:8181/contact1">Contact</a></li>
+<li><a href="http://localhost:8181/highsec">Higher Studies</a></li>
+<li class="active"><a href="http://localhost:8181/12medical">Medical</a></li>
+<li><a href="http://localhost:8181/12nonmedical">Non-Medical</a></li>
+<li><a href="http://localhost:8181/12commerce">Commerce</a></li>
+<li><a href="http://localhost:8181/12arts">Arts</a></li>
+</ul>
+
+</div>
+</div>
+</nav>
+<br/><br/><br/><br/>
+    <h1 align="center"><b>Career Options in Medical</b></h1>
+    
+<br/><br/>
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/cm1.jfif')}}" style="float:right;" alt="MBA" class="center" />
+    <br/><br/><h3><b>Medicine</b></h3>
+    <br/><br/>
+<p >The most common career choice for students opting for PCB stream is to become a doctor. The first requirement is to clear NEET and/or the state medical entrance exams and secure a seat in a medical college. The undergraduate programs – MBBS (Bachelor of Medicine and Bachelor of Surgery), BAMS (Bachelor of Ayurvedic Medicine and Surgery) and BHMS (Bachelor of Homeopathic Medicine and Surgery) are of 5 years. Upon completion, the student can opt for postgraduate studies for specialization. </p>
+</div>
+   
+<br/><br/>
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/cm2.png')}}" style="float:right;" alt="MBA" class="center" />
+    <br/><br/><h3><b>Dentistry</b></h3>
+    <br/><br/>
+<p >Dentistry is a branch of medicine that specifically deals with the oral cavity. The first requirement is to clear NEET and/or the state medical entrance exams and secure a seat in a medical college. The undergraduate programs BDS (Bachelor of Dental Surgery) is of 5 years. Upon completion, the student can opt for postgraduate studies for specialization.</p>
+</div>    
+    
+<br/><br/>
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/cm4.png')}}" style="float:right;" alt="MBA" class="center" />
+    <br/><br/><h3><b>Pharmacy</b></h3>
+    <br/><br/>
+<p class="p1">Pharmacists/chemists/druggists are healthcare professionals who practice in pharmacy, the field of health sciences focusing on safe and effective medication use. The student must obtain a B. Pharm (Bachelor of Pharmacy) degree at a pharmacy school or related institution.</p>
+</div>  
+ 
+<br/><br/>
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/cm5.jpg')}}" style="float:right;" alt="MBA" class="center" />
+    <br/><br/><h3><b>Nursing</b></h3>
+    <br/><br/>
+<p >Nursing is a profession within the health care sector that focuses on the care of patients. A student has to obtain a BSN (Bachelor of Science in Nursing), a four-year undergraduate degree. Advanced education at the graduate level is for specialization as an advanced practice registered nurse (APRN) or for advanced roles in leadership, management, or education.</p>
+</div>  
+    
+<br/><br/>
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/cm6.jfif')}}" style="float:right;" alt="MBA" class="center" />
+    <br/><br/><h3><b>Optometry</b></h3>
+    <br/><br/>
+<p >Optometry is a healthcare profession concerned with the eyes and vision. Optometrists are trained to prescribe and fit lenses to improve vision. Academic degrees such as Bachelor of Optometry, Master of Optometry and Doctor of Philosophy in Optometry are awarded in India by the universities recognized by the UGC. Optometrists have to register with the Optometry Council of India.</p>
+</div>      
+
+<br/><br/>
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/cm7.jpg')}}" style="float:right;" alt="MBA" class="center" />
+    <br/><br/><h3><b>Physiotherapy</b></h3>
+    <br/><br/>
+<p >Physiotherapy is a physical medicine and rehabilitation specialty using mechanical force and movements. A student has to obtain an undergraduate degree, Bachelor of Physiotherapy and can then opt for specialization in Cardiovascular & Pulmonary Physiotherapy, Clinical Electrophysiology, Geriatric, Integumentary, Neurological, Orthopedic, Pediatric, Sports, Women’s Health or Palliative Care.</p>
+</div>  
+
+<br/><br/>
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/cm8.jpg')}}" style="float:right;" alt="MBA" class="center" />
+    <br/><br/><h3><b>Biotechnology</b></h3>
+    <br/><br/>
+<p >Biotechnology is the use of living systems and organisms to develop or modify products. A student may opt for a B. Tech. Degree and then pursue further studies in health care (medical), Crop Production and Agriculture, nonfood (industrial) uses of crops, environmental uses, etc.</p>
+</div>  
+ <br/><br/>       
+</body>
+</html>

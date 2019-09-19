@@ -1,0 +1,109 @@
+<html>
+<head>
+<style>
+#1:hover{
+color:DC143C;
+    }
+.boxed{
+border:1px solid black;
+width:1500px;
+height:300px;
+background-color:	#F08080;
+border-radius:50px;
+}
+img{ width:400px;
+height:250px;
+margin-top:25px;
+margin-right:50px;
+border:1px solid black;
+}
+h1{
+margin-left:100px;
+margin-top:70px;
+}
+.a1{
+margin-left:100px;
+}
+h2{
+margin-left:100px;
+color:DC143C;
+}
+.a{ 
+margin-left:100px;
+}
+.column {
+   
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="boxed">
+<img src= "{{ url_for('static',filename='img/spjimrm.jfif')}}" style="float:right;" alt="MBA" class="center" />
+<h1><u>SP Jain Institute of Management and Research,Mumbai</u></h1>
+<h3 class="a1">Private</h3>
+</div>
+
+<h2>Courses Offered:</h2>
+    <p class="a1"><b>UNDERGRADUATE</b><br/>
+Bachelor of Business Administration<br/>
+Bachelor of Business Communication<br/>
+Bachelor of Data Science<br/>
+Bachelor of Economics<br/>
+        Diploma In Business<br/>
+       <p class="a1"> <b>POSTGRADUATE</b><br/>
+Master of Global Business<br/>
+Global MBA<br/>
+Executive MBA<br/>
+    Executive MBA Sydney</p><br/>
+   <p class="a1"> <b>Partnership Postgraduate</b><br>
+       Master in Global Luxury Goods & Services Management</p>
+      <p class="a1">  <br><b>PROFESSIONAL</b><br/>
+Fintech (Financial Technology)<br/>
+Digital Marketing  <br/>
+Big Data & Visual Analytics<br/>
+Entrepreneurial<br/>
+Global Family Managed Business
+<br>Global Owner Manager Program
+      <p class="a1">  <b>Doctrial</b><br/>
+        doctor of Business Administration
+          <br></p>
+    
+    <h2>Exams Offered:</h2>
+    <p class="a">Admissions to the course will be done on the basis of CAT/XAT/GMAT score, candidate’s academic record, relevance of work experience(if any) and group interviews.      </p>
+    
+    <h2>Gallery:</h2>
+	<div class="a1">
+    <div class="row">
+  <div class="column">
+    <img src= "{{ url_for('static',filename='img/spjimrm1.jfif')}}" alt="Snow" style="width:300px height=200px" /></div>
+  <div class="column">
+    <img src= "{{ url_for('static',filename='img/spjimrm2.jfif')}}" alt="Forest" style="width:300px height:200px">
+  </div>
+  <div class="column">
+    <img src= "{{ url_for('static',filename='img/spjimrm3.jfif')}}" alt="Mountains" style="width:300px height:200px">
+  </div>
+</div>
+</div>
+    
+    <h2>Contact:</h2>
+    <ul class="a">
+        <li>LINK: www.spjimr.org</li>
+        <li>Contact Number: 022 26230396</li>
+        
+    </ul>
+    
+</body>
+</html>

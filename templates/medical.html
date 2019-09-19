@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>Medical</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+
+       <!-- Bootsrap -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/bootstrap.min.css')}}">
+
+        <!-- Font awesome -->
+		<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/font-awesome.min.css')}}">
+
+
+        <!-- Owl carousel -->
+         <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/owl.carousel.css')}}">
+		 
+        <!-- Template main Css -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css')}}">
+        
+        <!-- Modernizr -->
+        <script src="{{ url_for('static',filename='assets/js/modernizr-2.6.2.min.js')}}"></script>
+
+
+  
+<style>
+ #main
+  { width:1500px;
+    height:800px;
+    margin-left:auto;
+	margin-right:auto;
+    align:middle;
+	}
+   h3{
+        margin-left:100px;
+        margin-right:100px;
+        text-align: justify;
+        line-height: normal;
+        letter-spacing: normal;
+        word-spacing: normal;
+        
+    }
+  </style> 
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+</div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li><a href="http://localhost:8181/">Home</a></li>
+<li><a href="http://localhost:8181/about1">About</a></li>
+<li><a href="http://localhost:8181/contact1">Contact</a></li>
+<li><a href="http://localhost:8181/mba">Management</a></li>
+<li><a href="http://localhost:8181/engg">Engineering</a></li>
+<li class="active"><a href="http://localhost:8181/medical">Medical</a></li>
+<li><a href="http://localhost:8181/law">Law</a></li>
+<li><a href="http://localhost:8181/highsec">Higher Secondary</a></li>
+</ul>
+</div>
+</div>
+</nav>
+        
+<img id="main" src=  "{{ url_for('static',filename='img/medical1.jpg')}}" alt="Med" class="center" >
+<br/><br/><br/>
+
+<h3><u><b>Management Courses</b></u></h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src= "{{ url_for('static',filename='img/md1.jpg')}}" alt="md1" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+    <img src= "{{ url_for('static',filename='img/md11.jpg')}}" alt="md11" style="width:300px; height=150px;">&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md2.jpg')}}" alt="md2" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md12.jpg')}}" alt="md12" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+    </p>
+    <br/>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md13.jpg')}}" alt="md13" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+    <img src= "{{ url_for('static',filename='img/md3.jpg')}}" alt="md3" style="width:300px; height=150px;">&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md14.jpg')}}" alt="md14" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md4.jpg')}}" alt="md4" style="width:300px; height=150px;" >
+    </p>
+    <br/>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md5.jpg')}}" alt="md5" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+    <img src= "{{ url_for('static',filename='img/md15.jpg')}}" alt="md15" style="width:300px; height=150px;">&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md6.jpg')}}" alt="md6" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md16.jpg')}}" alt="md16" style="width:300px; height=150px;" >
+    </p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md17.jpg')}}" alt="md17" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+    <img src= "{{ url_for('static',filename='img/md7.jpg')}}" alt="md7" style="width:300px; height=150px;">&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md18.jpg')}}" alt="md18" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md8.jpg')}}" alt="md8" style="width:300px; height=150px;" >
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md9.jpg')}}" alt="md9" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+    <img src= "{{ url_for('static',filename='img/md19.jpg')}}" alt="md19" style="width:300px; height=150px;">&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md10.jpg')}}" alt="md10" style="width:300px; height=150px;" >&nbsp;&nbsp;&nbsp;
+     <img src= "{{ url_for('static',filename='img/md20.jpg')}}" alt="md20" style="width:300px; height=150px;" >
+    </p>
+    
+<br/><br/><br/><br/>
+    <h3><b><u>Medical Colleges</u></b></h3>    
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/top10medgovt">
+<img border="0" alt="Med1" src=  "{{ url_for('static',filename='img/med1.jpeg')}}" width="350" height="200"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/top10medpvt">
+<img border="0" alt="Med2" src=  "{{ url_for('static',filename='img/med2.jpeg')}}" width="350" height="200"/>
+</a>
+</p>
+<br/><br/><br/>
+	
+    <footer class="main-footer">
+
+        <div class="footer-top">
+            
+        </div>
+
+
+        <div class="footer-main">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h4 class="footer-title">About EducationBug <span class="title-under"></span></h4>
+
+                            <div class="footer-content">
+                                <p>
+                                    
+                               <strong>Your EducationBug</strong> provides you information regarding different colleges that are really popular and best in their academics and infrastructure and thus can help you achieve your goals much easily. 
+                                </p> 
+
+                                <p>
+								We aim to provide you correct information so that you can take every step of life with full confidence and can achieve your goals.
+                             <br><br> Our Instructors are very welcoming for your queries and reply you as soon as possible so that you can get answers to lots of questions coming to your mind regarding any institute or even your personal queries about your future decisions in academics.     
+                                </p>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h4 class="footer-title"> The stories which will inspire you <span class="title-under"></span></h4>
+
+                            <div class="footer-content">
+                                <ul class="tweets list-unstyled">
+                                    <li class="tweet"> 
+
+                                     Hi Friends! I am Harshita and recently I am a student IIT Ropar.During completion of my 12th exams I started seaching for colleges in whch i can apply after my result but it was a diffiult job then one my friends suggested me about EducationBug and it helped me a lot by providing all information at one place.  
+                                    </li>
+
+                                    <li class="tweet"> 
+
+                                        Hello, My Name Is Anuragh Singh. I Am Studying at Indra Gandhi Institute of Medical Sciences,Bihar.It's a really good website to search for best colleges in India and that even with lots of ease. 
+                                    </li>
+
+                                    <li class="tweet"> 
+									I am Kanupriya,a Student at Gujarat National Law University.Instructors at EducationBug are really helplful you can either contact them directly or can mail them about any of your queries and you will get your reply realy fast. 
+                                    </li>
+
+                                </ul>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="footer-col">
+
+                            <h4 class="footer-title">Contact us <span class="title-under"></span></h4>
+
+                            <div class="footer-content">
+
+                                <div class="footer-form" >
+                                    
+                                    <form action="/contactus" class="ajax-form">
+
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Name" />
+                                        </div>
+
+                                         <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="E-mail" >
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Message" /></textarea>
+                                        </div>
+
+                                        <div class="form-group alerts">
+                        
+                                            <div class="alert alert-success" role="alert">
+                                              
+                                            </div>
+
+                                            <div class="alert alert-danger" role="alert">
+                                              
+                                            </div>
+                                            
+                                        </div>
+
+                                         <div class="form-group">
+                                            <button type="submit" class="btn btn-submit pull-right">Send message</button>
+                                        </div>
+                                        
+                                    </form>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+
+
+
+                </div>
+                
+                
+            </div>
+
+            
+        </div>
+
+        
+        
+    </footer>
+
+
+
+        <!--  Scripts
+    ================================================== -->
+
+ <!-- jQuery -->
+       <script src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Bootsrap javascript file -->
+    <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js')}}"></script>
+    
+    <!-- owl carouseljavascript file -->
+    <script src= "{{ url_for('static',filename='assets/js/owl.carousel.min.js')}}"></script>
+
+    <!-- Template main javascript -->
+    <script src= "{{ url_for('static',filename='assets/js/main.js' )}}"></script>
+
+   
+</body>
+</html>

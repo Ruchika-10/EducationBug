@@ -1,0 +1,108 @@
+<html>
+<title>Welcome Admin</title>
+<head>
+<style>      
+.dropbtn {
+    background-color: #DDA0DD;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: 	#CD853F;}
+     
+    
+ .container {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    top: 80px;
+    left: 550px;
+    background-color: black;
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+}   
+</style>
+</head>
+<body>
+
+    
+    <div class="dropdown">
+    <button class="dropbtn"><a href="/welcome">Admin Home</a></button>
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn"><a href="/adm_contactus">Contact Us</a></button>
+    </div>
+<div class="dropdown">
+    <button class="dropbtn">Management</button>
+    <div class="dropdown-content">
+    <a href="/adm_top10mba">Top 10</a>
+    <a href="/adm_iim">IIM</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">Engineering</button>
+    <div class="dropdown-content">
+    <a href="/adm_top10engg">Top 10</a>
+    <a href="/adm_iit">IIT</a>
+    <a href="/adm_nit">NIT</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">Medical</button>
+    <div class="dropdown-content">
+    <a href="/adm_top10medgovt">Top 10 Govt</a>
+    <a href="/adm_top10medpvt">Top 10 Pvt</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">Law</button>
+    <div class="dropdown-content">
+    <a href="/adm_top10law">Top 10</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn"><a href="/adm_signup">Signup</a></button>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn"><a href="/logout">&nbsp;Logout</a></button>
+</div>
+<div class="container">
+    <img id=main src=  "{{ url_for('static',filename='img/back2.jpg')}}" alt="Welcome" width=1500 height=800 />
+  <div class="text-block"> 
+    <h1>Welcome Admin</h1>
+  </div>
+</div>
+</body>
+</html>

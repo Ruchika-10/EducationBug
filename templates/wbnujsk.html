@@ -1,0 +1,114 @@
+<html>
+<head>
+<style>
+#1:hover{
+color:DC143C;
+    }
+.boxed{
+border:1px solid black;
+width:1500px;
+height:300px;
+background-color:	#F08080;
+border-radius:50px;
+}
+img{ width:400px;
+height:250px;
+margin-top:25px;
+margin-right:50px;
+border:1px solid black;
+}
+h1{
+margin-left:100px;
+margin-top:70px;
+}
+.a1{
+margin-left:100px;
+}
+h2{
+margin-left:100px;
+color:DC143C;
+}
+.a{ 
+margin-left:100px;
+}
+.column {
+   
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/wbnujsk.jfif')}}" alt="law" style="float:right;" class="center" />
+<h1><u>THE WEST BENGAL NATIONAL UNIVERSITY OF JURIDICIAL SCIENCE,KOLKATA</u></h1>
+<h3 class="a1">Government</h3>
+</div>
+    <h2>Admission:</h2>
+    <p class='a'><b>Eligibility Criteria for M.Phil.</b>
+The candidate must have an LLM Degree or any Master’s Degree with 50% marks.<br>
+    <b>Eligibility Criteria for BA LLB {Hons.}</b>
+The candidate must have passed 10+2 pattern with 45% of the total marks in case of general category and 40% of the total marks in case of SC and ST applicants.
+Age Limit - 20 years for GC and 21 for SC/ST candidates.<br>
+ <b>
+     Eligibility Criteria for LLM</b>
+Applicant must be a 3-years Law graduate from any recognized University with at least 50% marks.
+Admission will also be based on the performance in the Written Test, experience, published articles
+    
+    
+    <h2>Courses Offered:</h2>
+    <p class ='a'>
+        <b>Bachelor of Arts + Bachelor of Laws [BA LLB] {Hons.}</b>
+5 year(s)<br>
+10,40,000<br>
+        <b>Bachelor of Science + Bachelor of Laws [B.Sc LLB] {Hons.}</b><br>                                                                     
+5 year(s)<br>
+10,40,000<br>
+        <b>Master of Laws [LLM]</b><br>
+2 year(s)<br>
+1,75,000<br>
+        <b>Ph.D</b><br>
+3 year(s)<br>
+78,100<br>
+</p>
+    
+    
+  
+    <h2>Gallery:</h2>
+	<div class="a1">
+    <div class="row">
+  <div class="column">
+    <img  src=  "{{ url_for('static',filename='img/wbnujsk1.jfif')}}" alt="law" style="width:300px height=200px" /></div>
+  <div class="column">
+    <img  src=  "{{ url_for('static',filename='img/wbnujsk2.jfif')}}" alt="law" style="width:300px height:200px">
+  </div>
+  <div class="column">
+    <img  src=  "{{ url_for('static',filename='img/wbnujsk3.jfif')}}" alt="law" style="width:300px height:200px">
+  </div>
+</div>
+</div>
+    
+    <h2>Contact Us</h2><p class ='a'>
+<li class ='a' >address:The WB National University of Juridical Sciences<br>
+Dr. Ambedkar Bhavan<br>
+12, LB Block, Sector III,<br>
+Salt Lake City<br>
+    Kolkata - 700098<br></li>
+
+    <li class ='a'>Phone: (+91)33-2335 7379 /0765/2806 /2809/2811/2812</li>
+    <li class ='a'>Fax: (+91)33-2335 7422 /0511</li>
+    <li class ='a'>Email: info@nujs.edu</li>
+
+</body>
+</html>

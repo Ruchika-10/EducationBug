@@ -1,0 +1,114 @@
+<html>
+<head>
+<style>
+#1:hover{
+color:DC143C;
+    }
+.boxed{
+border:1px solid black;
+width:1500px;
+height:300px;
+background-color:DC143C;
+border-radius:50px;
+}
+img{ width:400px;
+height:250px;
+margin-top:25px;
+margin-right:50px;
+border:1px solid black;
+}
+h1{
+margin-left:100px;
+margin-top:70px;
+}
+.a1{
+margin-left:100px;
+}
+h2{
+margin-left:100px;
+color:DC143C;
+}
+.a2{ 
+margin-left:300px;
+}
+ .column {
+   
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}s   
+</style>
+</head>
+
+<body>
+
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/nitsurat.jfif')}}" alt="nit" style="float:right;" class="center" />
+<h1><u>National Institute of Technology, Surat</u></h1>
+<h3 class="a1">Government</h3>
+</div>
+    <h2 class='a'>ABOUT:</h2>
+<p class='a1'>National Institute of Technology Surat
+NIT Surat Logo.svg
+NIT Surat (SVNIT)
+Motto	Vigyanam Saarthi nah syatt
+Motto in English
+Charioteer of Science
+Type	Public
+Established	1961
+Director	Shailesh R. Gandhi
+Academic staff
+210
+Location	Surat, Gujarat, India
+Campus	Urban
+Affiliations	Indian Institutes of National Importance
+Website	www.svnit.ac.in
+The National Institute of Technology, Surat (NIT Surat), formally known as Sardar Vallabhbhai National Institute of Technology or SVNIT, is an engineering institute of higher education established by the Parliament of India in 1961. It is one of 30 National Institutes of Technology in India recognized by the Government of India as an Institute of National Importance.<br>[1] It is the Anchor Institute for the Auto and Engineering sector and will be training the workforce.<br>[2] The project is also designated as the "Center of Excellence" in water resources and flood management and is supported by the World Bank.</p>
+<h2 class='a'>Courses Offered:</h2>
+    <div class='a1'>
+    Bachelor of Technology in Civil Engineering <br/> 
+    Master of Technology in Structural Engineering  <br/>
+    Master of Technology in Soil Mechanics and Foundation Engineering<br/> 
+    Master of Technology in Environmental Engineering  <br/>
+    Master of Technology in Water Resources Engineering <br/>
+    Master of Technology in Master of Town and Regional Planning  <br/>
+    Bachelor of Technology in Chemical Engineering  <br/>
+    Master of Technology in Chemical Engineering  <br/>
+    Bachelor of Technology in Computer Engineering <br/>
+    Master of Technology in Computer Engineering  <br/>
+    Bachelor of Technology in Electrical Engineering <br/>
+    Master of Technology in Electrical Engineering  <br/>
+    Bachelor of Technology in Mechanical Engineering<br/>
+</div>
+    
+    <h2>Gallery:</h2>
+    <div class="a1">
+    <div class="row">
+  <div class="column">
+    <img src=  "{{ url_for('static',filename='img/nitsurat1.jpg')}}" alt="nit" style="width:300px height=200px" ></div>
+  <div class="column">
+    <img src=  "{{ url_for('static',filename='img/nitsurat2.jpg')}}" alt="nit" style="width:300px height:200px">
+  </div>
+  <div class="column">
+    <img src=  "{{ url_for('static',filename='img/nitsurat3.jpg')}}" alt="nit" style="width:300px height:200px">
+  </div>
+</div>
+    </div>
+    
+    <h2>CONTACT:</h2>
+<div class="a1">
+    <b>Sardar Vallabhbhai National Institute of Technology</b><br/>
+    <br/>Year Founded	:	1961
+<br/>Contact No	:	0261-2259571, 2259582
+<br/>Email	:	dbnaik@svnit.ac.in
+<br/>Website	:	www.svnit.ac.in
+    </div>
+</body>
+</html>

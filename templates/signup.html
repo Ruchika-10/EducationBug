@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0 ;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+</div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+           <li><a href="http://localhost:8181/">Home</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+            <li><a href="http://localhost:8181/user"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+            <li class="active"><a href="http://localhost:8181/sign"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign UP</a></li>
+
+        </ul>
+    </div>
+</div>
+
+</nav>
+
+<hr></hr>
+<p>
+<p> 
+<p><p><p><p>
+<p>
+<hr></hr>
+</p></p></p></p>
+</p> 
+</p>
+</p>
+
+<h1>Signup</h1>
+
+
+<script language="javascript">
+ 
+function validate(f)
+{
+if(f.username.value=="")
+{
+alert('Fill all the columns!!');
+return;
+}
+f.submit();
+}
+</script>
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}"/>	
+<div class="panel panel-primary">
+
+<div class="panel-body">
+<form action="/insert_user" method="POST">
+<div class="container">
+<div class="row">
+<div class=form-group>
+<label for="full_name">Full Name</label>
+<input type="text" name="full_name" class="form-control" placeholder="Full Name"/>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group">
+<label for="dob">DOB</label>
+<input type="date" name="dob" class="form-control" placeholder="YY-MM-DD"/>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group">
+<label for="email">E-mail Id</label>
+<input type="text" name="email" class="form-control" placeholder="e-mail"/>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group">
+<label for="username">Username</label>
+<input type="text" name="username" class="form-control" placeholder="username"/>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group">
+<label for="password">Password</label>
+<input type="password" name="password" class="form-control" placeholder="password"/>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group">
+<label for="mobile">Mobile Number</label>
+<input type="text" name="mobile" class="form-control" placeholder="mobile number"/>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group">
+<label for="gender">Gender</label>
+<input type="text" name="gender" class="form-control" placeholder="M or F or O"/>
+</div>
+</div>
+
+<div class="row">
+	<input  type=button onclick="validate(this.form)"  value="Sign Up" class="btn btn-danger" />
+ &nbsp;<input  type=reset  value="Reset" class="btn btn-warning"/> &nbsp;
+ <a href="/"> <input type="button" value="Cancel" class="btn btn-info"/></a>
+</div>
+</div>
+</div> 
+</form>
+</body>
+</html>

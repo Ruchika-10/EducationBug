@@ -1,0 +1,111 @@
+<html>
+<head>
+<style>
+#1:hover{
+color:DC143C;
+    }
+.boxed{
+border:1px solid black;
+width:1500px;
+height:300px;
+background-color:	#F08080;
+border-radius:50px;
+}
+img{ width:400px;
+height:250px;
+margin-top:25px;
+margin-right:50px;
+border:1px solid black;
+}
+h1{
+margin-left:100px;
+margin-top:70px;
+}
+.a1{
+margin-left:100px;
+}
+h2{
+margin-left:100px;
+color:DC143C;
+}
+.a{ 
+margin-left:100px;
+}
+.column {
+   
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/kmcm.jfif')}}" alt="Med" style="float:right;"  class="center" />
+<h1><u>KASTURBA MEDICAL COLLEGE,MUNIPAL</u></h1>
+<h3 class="a1">Government</h3>
+</div>
+<h2>"Manipal Institutions have long been distinguished for excellence in professional education. MAHE is home to some of the top ranking institutions across diverse disciplines." <br>
+
+Vice Chancellor</h2>
+
+    
+    <h2>Vision and Mission:</h2>
+    <p class ='a'><u>Vision:</u><br>
+To provide global leadership in human development, excellence in education and healthcare.<br>
+
+        <u>Mission</u><br>
+        To train competent, compassionate and caring physicians through excellence in teaching, patient care and medical research</p>
+    
+    
+    <h2>Admission:</h2>
+    <p class ='a'>Admissions to some of the courses, Medicine & Engineering in particular, are done through a process which has an online test followed by counselling, which eventually leads to the admission of a student. Admissions are either through online entrance test or are based on qualifying examination marks.</p>
+    
+ 
+    
+    
+    <h2>Courses Offered:</h2>
+    <p class='a'>1.MBBS - Bachelor of Medicine & Bachelor of Surgery<br>
+        
+2.Medical (UG) Electives<br>
+       3. D - Post-graduation in Medicine<br>
+4.MS - Master of Surgery<br>
+5.MSc Clinical Embryology<br>
+6.MSc in Forensic Science <br>
+7.MSc Postgraduate Degree<br>
+8.MSc Yoga Therapy<br>
+9.PG Medical Diploma<br></p>
+    
+  
+    <h2>Gallery:</h2>
+	<div class="a1">
+    <div class="row">
+  <div class="column">
+    <img  src=  "{{ url_for('static',filename='img/kmcm1.jfif')}}" alt="Med"  style="width:300px height=200px" /></div>
+  <div class="column">
+    <img  src=  "{{ url_for('static',filename='img/kmcm2.jfif')}}" alt="Med"  style="width:300px height:200px">
+  </div>
+  <div class="column">
+    <img  src=  "{{ url_for('static',filename='img/kmcm3.jfif')}}" alt="Med"  style="width:300px height:200px">
+  </div>
+</div>
+</div>
+    
+    <h2>Contact Us</h2>
+
+<p class ='a'>Registrar <br>
+manipal.edu, Manipal 576104, Karnataka, India <br>
+Tel: +91 820 2922323 <br>
+e-mail: registrar@manipal.edu</p>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+<style>
+#1:hover{
+color:DC143C;
+    }
+.boxed{
+border:1px solid black;
+width:1500px;
+height:300px;
+background-color:	#F08080;
+border-radius:50px;
+}
+img{ width:400px;
+height:250px;
+margin-top:25px;
+margin-right:50px;
+border:1px solid black;
+}
+h1{
+margin-left:100px;
+margin-top:70px;
+}
+.a1{
+margin-left:100px;
+}
+h2{
+margin-left:100px;
+color:DC143C;
+}
+.a{ 
+margin-left:100px;
+}
+.column {
+   
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="boxed">
+<img src=  "{{ url_for('static',filename='img/cmcv.jfif')}}"  alt="Med" style="float:right;" class="center" />
+<h1><u>CHRISTIAN MEDICAL COLLEGE,VELLORE</u></h1>
+<h3 class="a1">Private</h3>
+</div>    
+    <h2>Admission:</h2>
+    <p class='a'>The college offers multiple UG, PG & Doctoral courses focusing on the areas of Medicine, Surgery and Nursing. CMC Vellore Admission is done through entrance examination followed by Interview round. The college also accepts NEET score for admission to MBBS program.
+The present town campus was acquired in 1924 and a 267 bed hospital was built.<br>
+        The Christian Medical College, Vellore, began in 1918 when Dr Scudder started training female for the Licentiate Diploma (LMP). The first batch of male students was admitted in 1947 and permanent affiliations to the Madras University was done in 1950.</p>
+    
+ <h2>Eligibility Criteria:</h2>
+    <p class='a'>MBBS/ BDS/ M.Pharm or M.Sc In Nurslng/ Biostatistics/ Statistics/ Nutrition/ Biochemistry/ Anatomy/ Physiology/ Pharmacology/ Microbiology or any other medical related MSc/MA Social work/ Sociology/ Anthropology/ Psychology/ Social Psychology/ Health Education/ BVSc/ BAMS/ BUMS/ BHMS/ BS-MS/ MPT/ MOT degree holders</p>
+    
+    <h2>Courses Offered:</h2>
+    <P CLASS='A'>
+MBBS(5 Y)<br>
+Bachelor of Physiotherapy(4 Y)<br>
+D.Medi(3 Y)<br>
+B.Sc(3 Y)<br>
+M.Sc(2 Y)</P>
+    
+    
+  
+    <h2>Gallery:</h2>
+	<div class="a1">
+    <div class="row">
+  <div class="column">
+    <img src=  "{{ url_for('static',filename='img/cmcv1.jfif')}}"  alt="Med" style="width:300px height=200px" /></div>
+  <div class="column">
+    <img src=  "{{ url_for('static',filename='img/cmcv2.jfif')}}"  alt="Med" style="width:300px height:200px">
+  </div>
+  <div class="column">
+    <img src=  "{{ url_for('static',filename='img/cmcv3.jfif')}}"  alt="Med" style="width:300px height:200px">
+  </div>
+</div>
+    </div>
+	
+    <h2>Contact Us</h2>
+<div class="a1">
+    <li>Contact:0416 2222102 </li>
+    <LI>Official site: www.cmch-vellore.edu</LI>
+    </div>
+	</body>
+</html>
